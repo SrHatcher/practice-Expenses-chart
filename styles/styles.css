@@ -42,7 +42,7 @@ main{
     justify-content: space-between;
     gap: 2rem;
 
-    height: 55rem;
+    height: 56rem;
     min-width: 34.5rem;
     width: 90%;
     max-width: 42rem;
@@ -61,32 +61,73 @@ main{
     background-color: var(--soft-red);
 }
 .balance_header__balance_content{}
+.balance_header__balance_content p{
+    font-size: 1.6rem;
+}
 .balance_header__balance_content strong{
     font-size: 2.5rem;
 }
 
 .blance_header__circles{
-    width: 5rem;
-    height: 5rem;
+    width: 7.2rem;
+    height: 4.8rem;
 
     background-image: url('../assets/images/logo.svg');
-    background-color: red;
-    background-size: 5rem;
+    background-size: 7.2rem 4.8rem;
+    background-repeat: no-repeat;
 }
 
 .main__balance_chart{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     height: 100%;
-    padding: 4rem 2rem;
+    padding: 3rem 2rem;
 
     color: var(--dark-brown);
     border-radius: 1rem;
     background-color: var(--very-pale-orange);
 }
-.balance_chart__title{}
-.balance_chart__chart{}
+.balance_chart__title{
+    line-height: 2rem;
+
+    margin-bottom: 2rem;
+}
+.balance_chart__chart{
+    width: 100%;
+}
 canvas{
     background-color: transparent;
 }
-.balance_chart__data{}
+hr{
+    width: 100%;
+
+    border:  solid 0.1rem var(--cream);
+}
+.balance_chart__data{
+    display: flex;
+    justify-content: space-between;
+}
 .data__this_month{}
-.data__previous_month{}
+.data__this_month p{
+    color: var(--medium-brown);
+}
+.data__this_month strong{
+    font-size: 3.5rem;
+    line-height: 3.8rem;
+
+    color: var(--dark-brown);
+}
+.data__previous_month{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+}
+.data__previous_month p{
+    color: var(--medium-brown);
+}
+.data__previous_month strong{
+    color: var(--dark-brown);
+}
