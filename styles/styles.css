@@ -1,0 +1,92 @@
+ @font-face {
+    font-family: 'DM Sans';
+    src: url('../assets/fonts/DMSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../assets/fonts/DMSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+:root{
+    --soft-red: hsl(10, 79%, 65%);
+    --cyan:  hsl(186, 34%, 60%);
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --very-pale-orange: hsl(33, 100%, 98%);
+    --font: 'DM Sans', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.8rem;
+    font-family: var(--font);
+
+    background-color: var(--cream);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+
+    height: 55rem;
+    min-width: 34.5rem;
+    width: 90%;
+    max-width: 42rem;
+}
+
+.main__balance_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 12rem;
+    padding: 0 2rem;
+
+    color: var(--cream);
+    border-radius: 1rem;
+    background-color: var(--soft-red);
+}
+.balance_header__balance_content{}
+.balance_header__balance_content strong{
+    font-size: 2.5rem;
+}
+
+.blance_header__circles{
+    width: 5rem;
+    height: 5rem;
+
+    background-image: url('../assets/images/logo.svg');
+    background-color: red;
+    background-size: 5rem;
+}
+
+.main__balance_chart{
+    height: 100%;
+    padding: 4rem 2rem;
+
+    color: var(--dark-brown);
+    border-radius: 1rem;
+    background-color: var(--very-pale-orange);
+}
+.balance_chart__title{}
+.balance_chart__chart{}
+canvas{
+    background-color: transparent;
+}
+.balance_chart__data{}
+.data__this_month{}
+.data__previous_month{}
